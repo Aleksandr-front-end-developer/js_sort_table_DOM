@@ -7,8 +7,8 @@ const titlesAll = document.querySelectorAll('thead th');
 titlesAll.forEach((title, index) => {
   title.addEventListener('click', (e) => {
     const sortRows = [...rows].sort((a, b) => {
-      const valueA = a.querySelector(`td:nth-child(${index + 1}`).innerText;
-      const valueB = b.querySelector(`td:nth-child(${index + 1}`).innerText;
+      const valueA = a.querySelector(`td:nth-child(${index + 1})`).innerText;
+      const valueB = b.querySelector(`td:nth-child(${index + 1})`).innerText;
 
       return valueA.localeCompare(valueB);
     });
